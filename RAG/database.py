@@ -23,7 +23,7 @@ def load_festival_data():
     documents = []
     for row in rows:
         text = (
-            f"{row[4]}\n{row[5]}"  # description + contents 같은 본문 텍스트만 담음
+            f"{row[0]}{row[4]}{row[5]}"  # description + contents 같은 본문 텍스트만 담음
         )
         metadata = {
             "name": row[0],
@@ -34,3 +34,5 @@ def load_festival_data():
         }
         documents.append(Document(page_content=text, metadata=metadata))
     return documents
+
+load_festival_data()

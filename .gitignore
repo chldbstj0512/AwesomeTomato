@@ -3,6 +3,7 @@
 
 # 모델, 벡터 인덱스 (용량 크면 제외)
 model/jhgan-ko-sbert/
+
 RAG/faiss_index_ko_sbert/
 
 # 캐시, pycache 등

@@ -4,6 +4,9 @@
 2025년 기준 RAG로 구축한 전국 축제 추천 챗봇입니다.
 ![vidu-video-278667073773235922-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/96d2fc85-5ce5-4001-bc5a-f162695c4a05)
 
+#### 활용 예시
+![image](https://github.com/user-attachments/assets/eb094b6a-2f0b-4952-9af8-118ee3e9eaa9)
+
 #### 실행하기 
 1. 데이터베이스 로드하기 </br>
 ```postgreSQL.ipynb (detail.csv -> postgreSQL)```</br></br>
@@ -11,6 +14,6 @@
 ```uvicorn main:app --host 0.0.0.0 --port 8000 --reload```</br></br>
 3. 클라이언트(gradio_ui.py) 실행, 브라우저 접속</br></br>
 
-### 연구 노트
+#### 연구 노트
 https://midi-sumac-f50.notion.site/20ead95088bf802a8c96cadf0b8fc302
 

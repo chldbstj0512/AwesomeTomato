@@ -1,18 +1,24 @@
-## 2025 전국 축제 추천 챗봇
+# 2025 전국 축제 추천 챗봇
 
-#### 안녕하세요, 지역 기반으로 요즘 떠오르는 축제를 추천해드릴게요!
-![vidu-video-278667073773235922-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/96d2fc85-5ce5-4001-bc5a-f162695c4a05)
+지역 기반으로 **요즘 핫한 축제 정보를 자동 추천해주는 RAG 기반 챗봇**입니다.  
+PostgreSQL + FastAPI + Gradio UI로 구성되어 있으며, 실제 공공데이터 축제 정보를 기반으로 사용자 질문에 맞춰 축제를 찾아드립니다!
 
-#### 활용 예시
+---
+
+### 실제 활용 예시
 ![image](https://github.com/user-attachments/assets/eb094b6a-2f0b-4952-9af8-118ee3e9eaa9)
 
-#### 실행하기 
-1. 데이터베이스 로드하기 </br>
-```postgreSQL.ipynb (detail.csv -> postgreSQL)```</br></br>
-2. Demo/RAG 에서 서버 실행 (fastAPI)</br>
-```uvicorn main:app --host 0.0.0.0 --port 8000 --reload```</br></br>
-3. 클라이언트(gradio_ui.py) 실행, 브라우저 접속</br></br>
+---
 
-#### 연구 노트
-https://midi-sumac-f50.notion.site/20ead95088bf802a8c96cadf0b8fc302
+### 주요 기능
 
+### • 지역 기반 축제 추천  
+- 사용자가 “서울에서 이번 주말 갈만한 축제 있어?”처럼 질문하면  
+  지역·기간·테마 등을 분석하여 적합한 축제를 추천합니다.
+
+### • RAG 기반 정보 검색  
+- PostgreSQL에 저장된 축제 상세 데이터를 기반으로  
+  **LangChain 벡터 검색**을 활용해 관련도 높은 정보를 추출합니다.
+
+### • 자연스러운 대화형 인터페이스  
+- Gradio UI를 통해 웹에서 챗봇 형태로 간편하게 이용할 수 있습니다.
